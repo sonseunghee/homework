@@ -2,28 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <title>물건 판매</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <title>상품 판매</title>
 </head>
 
 <body>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-center" src="..." alt="이미지 없음">
+  <div>
+    <img class="img"
+      src="https://postfiles.pstatic.net/MjAyMDAyMTRfMTUw/MDAxNTgxNjYzODU0ODAy.mOAdqhJ584AaQTADAH5N1cNJvXSEWxMgaJOVU7k806og.pAW5R8x9JrCfXROFGN2Cf_I-gA-jND6SqNfLUVJ2P6gg.JPEG.xaralnttxqi/4aad7be06e03ede9496ea5384a33e1663b5cadbadce933.jpg?type=w966"
+      alt="상품 사진">
+  </div>
+  <div>
+    <p class="h1">
+      KF94 마스크(대형) <a class="h5">가격 : 1,000 원 / 개</a>
+    </p>
+    <P class="h5">[긴급 재고 확보] 4중 구조 고성능 필터 국내산 프리 필터와 마이크로 필터로 초 미세먼지/황사/꽃가루/감염원을 94% 이상 차단</P>
+  </div>
+  <div>
+    <p class="h1">주문 하기</p>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">주문자 성함</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1">
       </div>
-      <p><h1>상품 제목</h1><h5>가격 : 1,000,000원 / 개</h5></p>
-
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">수량</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput2">주소</label>
+        <input type="text" class="form-control" id="exampleFormControlInput2">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput3">전화번호</label>
+        <input type="text" class="form-control" id="exampleFormControlInput3">
+      </div>
+    </form>
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary btn-lg btn-block">주문 하기</button>
+  </div>
 </body>
 
 </html>
