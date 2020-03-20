@@ -17,16 +17,43 @@
     crossorigin="anonymous"></script>
   <title>상품 판매</title>
   <style>
-    .style{
-      width: 1000px;
-      margin: 0 auto 0 auto;
+    .style {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .picture {
+      text-align: center;
     }
   </style>
+  <script>
+    function order() {
+      let order_name = $('#order_name').val();
+      let order_number = $('#order_number').val();
+      let order_address = $('#order_address').val();
+      let order_phonenumber = $('#order_phonenumber').val();
+      if (order_name == '') {
+        alert('성함을 입력해주세요');
+        $('#order_name').focus();
+      } else if (order_number == '') {
+        alert('수량을 선택해주세요');
+        $('#order_number').focus();
+      } else if (order_address == '') {
+        alert('주소를 입력해주세요');
+        $('#order_address').focus();
+      } else if (order_phonenumber == '') {
+        alert('전화번호를 입력해주세요');
+        $('#order_phonenumber').focus();
+      } else {
+        alert('주문이 완료되었습니다');
+      }
+    }
+  </script>
 </head>
 
 <body>
   <div class="style">
-    <div>
+    <div class="picture">
       <img class="img"
         src="https://postfiles.pstatic.net/MjAyMDAyMTRfMTUw/MDAxNTgxNjYzODU0ODAy.mOAdqhJ584AaQTADAH5N1cNJvXSEWxMgaJOVU7k806og.pAW5R8x9JrCfXROFGN2Cf_I-gA-jND6SqNfLUVJ2P6gg.JPEG.xaralnttxqi/4aad7be06e03ede9496ea5384a33e1663b5cadbadce933.jpg?type=w966"
         alt="상품 사진">
@@ -35,34 +62,35 @@
       <p class="h1">
         KF94 마스크(대형) <a class="h5">가격 : 1,000 원 / 개</a>
       </p>
-      <P class="h5">[긴급 재고 확보] 4중 구조 고성능 필터 국내산 프리 필터와 마이크로 필터로 초 미세먼지/황사/꽃가루/감염원을 94% 이상 차단</P>
+      <P class="h5">[긴급 재고 확보] 고성능 4중 국내산 프리 필터와 마이크로 필터로 초미세먼지/황사/꽃가루/감염원<br />94% 이상 차단</P>
     </div>
     <div>
       <p class="h1">주문 하기</p>
       <form>
         <div class="form-group">
-          <label for="exampleFormControlInput1">주문자 성함</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1">
+          <label for="order_name">주문자 성함</label>
+          <input type="text" class="form-control" id="order_name">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect1">수량</label>
-          <select class="form-control" id="exampleFormControlSelect1">
+          <label for="order_number">수량</label>
+          <select class="form-control" id="order_number">
+            <option selected></option>
             <option>1</option>
             <option>2</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlInput2">주소</label>
-          <input type="text" class="form-control" id="exampleFormControlInput2">
+          <label for="order_address">주문자 주소</label>
+          <input type="text" class="form-control" id="order_address">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlInput3">전화번호</label>
-          <input type="text" class="form-control" id="exampleFormControlInput3">
+          <label for="order_phonenumber">주문자 전화번호</label>
+          <input type="text" class="form-control" id="order_phonenumber">
         </div>
       </form>
     </div>
     <div>
-      <button type="button" class="btn btn-primary btn-lg btn-block">주문 하기</button>
+      <button type="button" class="btn btn-primary btn-lg btn-block" onclick="order()">주문 하기</button>
     </div>
   </div>
 </body>
